@@ -1,0 +1,25 @@
+/* 
+  .bola{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+    box-shadow: 0 0 0 5px orange;
+    padding: 0px;
+    background-color: orange;
+    margin: 0 auto;
+  }
+
+.animate{
+    animation: scale 1s linear infinite;
+} */
+  @keyframes scale {
+    50% {
+      -webkit-transform:scale(1.2);
+      -moz-transform:scale(1.2);
+      -ms-transform:scale(1.2);
+      -o-transform:scale(1.2);
+      transform:scale(1.2);
+    }
+  }
+  

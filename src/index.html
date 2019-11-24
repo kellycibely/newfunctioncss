@@ -7,6 +7,48 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <script type="text/javascript">
+
+    function newFunction(){
+      var x = document.getElementsByClassName("new"); //pega todos os elementos da classe
+      var i;
+        for (i = 0; i < x.length; i++) {
+         x[i].innerHTML;
+         x[i].innerHTML += '<b id="' + i + '"> Novo </b>';
+         document.getElementById(i).style.color = "orange";
+         document.getElementById(i).style.fontSize = "12px";
+         document.getElementById(i).style.fontStyle = "italic"
+         console.log(x[i].innerHTML);
+        }
+      }
+
+      function ball(){
+      var x = document.getElementsByClassName("ball"); //pega todos os elementos da classe
+      var i;
+        for (i = 0; i < x.length; i++) {
+         x[i].innerHTML;
+         x[i].innerHTML += '<div id="' + i + '"></div>';
+         document.getElementById(i).style.width = "2px";
+         document.getElementById(i).style.height = "2px";
+         document.getElementById(i).style.borderRadius = "50%";
+         document.getElementById(i).style.backgroundColor = "orange";
+         document.getElementById(i).style.boxShadow = "0 0 0 5px orange";
+         document.getElementById(i).style.padding = "0px";
+         document.getElementById(i).style.marginLeft = "10px";
+         document.getElementById(i).style.marginBottom = "10px";
+         document.getElementById(i).style.display= "inline-block";
+         //animation
+         document.getElementById(i).style.animation = "scale 1s linear infinite";
+         console.log(x[i].innerHTML);
+        }
+      }
+
+  // window.onload = newFunction;
+  window.onload = ball;
+  </script>
 </head>
 <body>
   <app-root></app-root>
